@@ -1,0 +1,235 @@
+/* app/clevels/level.module.css */
+
+/* Container for the entire page */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #0f172a;
+    min-height: 100vh;
+  }
+  
+  /* Loading state */
+  .loading {
+    font-size: 18px;
+    color: gray;
+    margin-top: 20px;
+  }
+  
+  /* Header styling */
+  .levelHeader {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .backLink {
+    text-decoration: none;
+    color: #0070f3;
+    margin-bottom: 10px;
+  }
+  
+  .levelInfo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .levelIndicator {
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+  }
+  
+  .levelPageTitle {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .levelPageDescription {
+    margin-top: 10px;
+    text-align: center;
+    max-width: 600px;
+  }
+  
+  /* Main content container */
+  .levelContent {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    color: black;
+    align-items: flex-start;
+  }
+  
+  /* Sidebar for courses */
+  .coursesSidebar {
+    width: 250px;
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    height: fit-content;
+    position: sticky;
+    top: 50px;
+    flex-shrink: 0;
+  }
+  
+  .sidebarTitle {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .courseList {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  /* Individual course items */
+  .courseItem {
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .courseItem:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .active {
+    background-color: #0070f3;
+    color: rgb(27, 26, 26);
+  }
+  
+  .completed {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  /* Progress bar */
+  .levelProgress {
+    margin-top: 20px;
+  }
+  
+  .progressLabel {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .progressBar {
+    width: 100%;
+    height: 10px;
+    background-color: #ddd;
+    border-radius: 5px;
+    margin-top: 5px;
+  }
+  
+  .progressFill {
+    height: 100%;
+    background-color: #0070f3;
+    border-radius: 5px;
+  }
+  
+  /* Buttons */
+  .btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+  }
+  
+  .btnPrimary {
+    background-color: #0070f3;
+    color: white;
+  }
+  
+  .btnPrimary:hover {
+    background-color: #005bb5;
+  }
+  
+  .btnSecondary {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .btnSecondary:hover {
+    background-color: #ccc;
+  }
+  
+  .btnDisabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+  }
+  
+  /* Course content */
+  .courseContent {
+
+    flex: 1;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    max-height: 80vh;
+    position: relative;
+    /* position: sticky;
+    top: 500px; */
+    /* overflow: hidden; */
+  }
+  
+  .courseHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    /* background: red;
+    position: sticky;
+    top: 0;
+    z-index: 10; */
+  }
+  
+  .courseTabs {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .tabBtn {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .tabBtn.active {
+    background-color: #0070f3;
+    color: white;
+  }
+  
+  /* Course body styling */
+  .courseBody {
+    margin-top: 20px;
+    /* top:100px;
+    position: relative; */
+    overflow-y: auto; /* Make this part scroll */
+    padding-bottom: 60px;
+  }
+  
+  .contentTab, .examplesTab, .exercisesTab {
+    position: sticky;
+    top: 50px;
+    margin-top: 10px;
+  }
+  
+  .exampleItem, .exerciseItem {
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
