@@ -1,0 +1,130 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.timer-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #1e293b; /* Slightly different from body for contrast */
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.timer-text {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #38bdf8;
+}
+
+/* Bigger animation */
+.timer-animation {
+  width: 200px; 
+  height: 200px;
+  margin-bottom: 15px;
+}
+
+/* Restart Timer Button */
+.timer-btn {
+  background-color: #38bdf8;
+  color: #0f172a;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-top: auto; /* Push the button to the bottom if you want spacing */
+}
+
+.timer-btn:hover {
+  background-color: #0284c7;
+}
+
+/* Right Column: Questions */
+.question-section {
+  background: #1e293b; /* Dark panel for questions */
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.section-title {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #38bdf8;
+}
+
+/* Scrollable container for multiple questions */
+.questions-scroll {
+  flex: 1; /* Fill remaining space */
+  overflow-y: auto;
+  border-top: 1px solid #334155;
+  margin-top: 10px;
+  padding-top: 10px;
+}
+
+.question-item {
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #334155;
+}
+
+.question-text {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+  color: #e2e8f0;
+}
+
+.options-list {
+  list-style: none;
+  padding: 0;
+}
+
+.option {
+  margin-bottom: 6px;
+}
+
+.option input {
+  margin-right: 8px;
+}
+
+.option label {
+  color: #e2e8f0;
+}
