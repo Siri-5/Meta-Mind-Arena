@@ -1,0 +1,51 @@
+{
+  "name": "flashsaas",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@clerk/nextjs": "^5.7.5",
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@headlessui/react": "^2.2.0",
+    "@mui/icons-material": "^5.16.7",
+    "@stripe/stripe-js": "^4.2.0",
+    "@tailwindcss/cli": "^4.0.17",
+    "@tailwindcss/postcss": "^4.0.17",
+    "firebase": "^10.14.1",
+    "groq-sdk": "^0.5.0",
+    "lottie-react": "^2.4.1",
+    "lucide-react": "^0.487.0",
+    "next": "^15.2.4",
+    "pdfjs-dist": "^3.11.174",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-icons": "^5.5.0",
+    "stripe": "^16.7.0",
+    "tailwindcss": "^3.4.17"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.5",
+    "postcss": "^8.5.3"
+  },
+  "description": "Welcome to **FlashLearner**, a powerful platform designed to help you create, manage, and study flashcards effortlessly. This project leverages Next.js, Firebase, and various modern web technologies to provide a seamless user experience, including advanced AI features for generating flashcards.",
+  "main": "firebase.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mitali-dxt/flashlearner.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mitali-dxt/flashlearner/issues"
+  },
+  "homepage": "https://github.com/mitali-dxt/flashlearner#readme"
+}
